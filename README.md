@@ -6,7 +6,7 @@
 
 ## Оглавление
 - [Виды HTML-элементов](#виды-html-элементов)
-- [Formatting Context](№formatting-context-контекст-форматирования)
+- [Formatting Context](#formatting-context-контекст-форматирования)
 - [Stacking Context](#stacking-context-контекст-наложения)
 - [Специфичность CSS селекторов](#специфичность-css-селекторов)
 - A11y (Доступность)
