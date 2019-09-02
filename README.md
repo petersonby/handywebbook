@@ -5,6 +5,8 @@
 Да-да, это повторение mdn, спецификаций, и статьи, что вы когда-то читали, ничего нового.
 
 ## Оглавление
+- [Вопросы по JavaScript](/JavaScript)
+
 - [Виды HTML-элементов](#виды-html-элементов)
 - [Formatting Context](#formatting-context-контекст-форматирования)
 - [Stacking Context](#stacking-context-контекст-наложения)
