@@ -14,6 +14,16 @@
 - Event Loop
 - Классы
 - Promises (Промисы)
+- Node.js, NPM
+- Express.js
+- REST API
+- NOSQL Databases (mongodb)
+- Postgresql
+- Микросервисы
+- JS Doc
+- Тестирование (UNIT, etc)
+- Протоколы HTTP, HTTPS
+- Docker
 
 ## Вопросы и ответы
 
