@@ -24,6 +24,15 @@
 - Тестирование (UNIT, etc)
 - Протоколы HTTP, HTTPS
 - Docker
+- React
+- State
+– Props
+- React Hooks
+- Lifecycle
+- Context
+- Fragment
+- Refs
+- Redux
 
 ## Вопросы и ответы
 
