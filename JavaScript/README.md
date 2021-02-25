@@ -26,8 +26,8 @@
 - Протоколы HTTP, HTTPS
 - Docker
 - [React](#react)
-- State
-– Props
+- [Props](#props)
+– [State](#state)
 - React Hooks
 - Lifecycle
 - Context
@@ -476,3 +476,74 @@ React DOM использует стиль именования camelCase для 
 Например, `class` становится `className` в JSX, а `tabindex` становится `tabIndex`.
 
 В React также используются следующие понятия: пропсы, состояние, жизненный цикл, контекст, рефы и хуки. Они будут рассмотрены ниже.
+
+[Вернуться к оглавлению](#оглавление)
+
+
+
+### Props
+
+__Пропсы__ – Объект с JSX-атрибутами и дочерними элементами компонента.
+
+Например, компонент `<Welcome>` выведет «Привет, Алиса» на страницу:
+
+```JavaScript
+function Welcome(props) {
+  return <h1>Привет, {props.name}</h1>;
+}
+
+const element = <Welcome name="Алиса" />;
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+```
+
+В компонент передаётся значение атрибута `name`, которое хранится в объекте props.
+
+[Вернуться к оглавлению](#оглавление)
+
+
+### State
+
+Состояние похоже на пропсы, но оно контролируется и доступно только конкретному компоненту.
+
+```JavaScript
+class Clock extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
+  }
+
+  render() {
+    return (
+      <div>
+        <h2>Сейчас {this.state.date.toLocaleTimeString()}.</h2>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <Clock />,
+  document.getElementById('root')
+);
+```
+
+Начальное значение состояния задаётся в конструкторе компонента, в данном случае `this.state = {date: new Date()}`.
+
+С помощью метода `this.setState()` происходит обновление состояния:
+
+```JavaScript
+this.setState({
+  date: new Date()
+});
+```
+
+Важно знать:
+
+- Не изменяйте состояние напрямую;
+- Обновления состояния могут быть асинхронными;
+- Обновления состояния объединяются.
+
+[Вернуться к оглавлению](#оглавление)
