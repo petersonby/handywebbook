@@ -27,7 +27,7 @@
 - Docker
 - [React](#react)
 - [Props](#props)
-– [State](#state)
+- [State](#state)
 - React Hooks
 - Lifecycle
 - Context
